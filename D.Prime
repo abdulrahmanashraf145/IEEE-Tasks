@@ -1,0 +1,40 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+bool isprime (int n){
+    bool flag =false;
+for (int i=2; i<=sqrt(n);i++)
+{
+    if(n%i==0 &&n!=2)
+    flag=true;
+}
+if(flag){
+    return false;
+
+}
+else 
+return true;
+
+}
+int main()
+{
+int x; 
+cin>>x;
+ while (x--)
+ {
+    int n;
+    cin>>n;
+    if(n==1){
+        cout<<"NO";
+    }
+    else {
+       if (isprime(n))
+        cout<<"YES";
+    }
+    else {
+    cout<<"NO";
+ }
+ }
+    return 0;
+
+}
