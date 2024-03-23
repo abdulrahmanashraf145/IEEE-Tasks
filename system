@@ -1,0 +1,72 @@
+nclude <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+const int ROWS = 100;
+const int COLUMNS = 5;
+struct type {
+    string typenumber;
+    string name;
+    string size;
+    string color;
+    int quantity;
+    double price;
+};
+type inventory[ROWS][COLUMNS];
+void addtype() {
+    
+    type newtype;
+    cout << "Enter type code: ";
+    cin >> newtype.typeCode;
+    cout << "Enter type  name: ";
+    cin >> newtype.name;
+    cout << "Enter type size: ";
+    cin >> newtype.size;
+    cout << "Enter type  color: ";
+    cin >> newtype.color;
+    cout << "Enter type quantity: ";
+    cin >> newtype.quantity;
+    cout << "Enter type price: ";
+    cin >> newtype.price;
+
+    for (int i = 0; i < ROWS; i++) {
+        if  {
+            inventory[i][0] = newtype;
+            cout << "Type added successfully." << endl;
+            break;
+        }
+    }
+}
+void showtype(){
+    cout<< "Enter your Type code: ";
+    cin>> newtype.typeCode;
+}
+
+
+int main(){
+    while (true) {
+        cout << "1. Add type" << endl;
+        cout << "2. show Type" << endl;
+        cout << "3. Quit" << endl;
+        cout << "Enter your choice: ";
+
+        int choice;
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                addtype();
+                break;
+            case 2:
+                showtype();
+                break;
+            case 3:
+                return 0;
+            default:
+                cout << "Your choise is false. Please try again." << endl;
+                break;
+        }
+    }
+
+
+    return 0;
+}
